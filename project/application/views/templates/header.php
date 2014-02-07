@@ -5,8 +5,9 @@
     <!-- Bootstrap -->
 <!--style sheets + js  -->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-  	<script src="js/angular.min.js">
-  	<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://code.angularjs.org/1.2.11/angular.min.js"></script>
+  	<script src="js/angular.js">
+  
   
 </head>
 
