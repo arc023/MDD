@@ -4,7 +4,7 @@
 <!--ending container-->
 		</div>
 		
-
+</body>	
 <!--bootstrap sticky footer-->
 	<div id="footer" class="navbar navbar-inner  navbar-fixed-bottom">
 		<div class="container">
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	
-</body>	
+
 	
 <!--end code-->	
 </html>
