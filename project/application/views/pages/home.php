@@ -1,11 +1,20 @@
-<h1>Testing things - like API</h1>
-<p>Note: Currently on US zip codes will work for the following code. Please don't enter international addresses.</p>
+<h1>Weather app testing webpage</h1>
+<p>Note: Currently on US zip codes will work for the following code. Please don't enter international addresses.
+</p>
+<p>
+More notes: API needs fixed. Footer in smaller sizes needs fixed. Should probably stick the orange color somewhere. 
+</p>
 
-
+<p>Finished page should have the following things:
+Zip code input which shows city, state, time, current weather forecast after click</p>
 <!--
 http://weather.yahooapis.com/forecastrss?z=99114=f
 -->
 <!-- API EXAMPLE -->
+
+<!--okay I cannot figure out how to make an $http request work. If someone readying this can help me get my code fixed I would greatly appreciate it. 
+
+AIM is arc023@fullsail.edu -->
 
 <div ng-app="weather1">
 <div ng-controller="WeatherController as app">
