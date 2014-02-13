@@ -2,8 +2,7 @@
 Anna Carlson
 1402 MDD, Chris Chapman
 Weather App project
-
-Notes: ;3; So far I've got the basics dones. But the API just hates me. -->
+-->
 
 <html ng-app='weather1'>
 <head>
@@ -15,7 +14,7 @@ Notes: ;3; So far I've got the basics dones. But the API just hates me. -->
   	 
   	<title>Weather </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <!-- Bootstrap -->
+    <!-- Bootstrap 
 <!--style sheets + js  / note: must include basic css in order for responsive css to work-->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet" >
@@ -33,32 +32,23 @@ main body chunk-->
 <p>Note: Currently on US zip codes will work for the following code. Please don't enter international addresses.
 </p>
 <p>
-More notes: API needs fixed. Footer in smaller sizes needs fixed. Should probably stick the orange color somewhere. 
+More notes: Footer in smaller sizes needs fixed. Should probably stick the orange color somewhere. 
 </p>
 
 <p>Finished page should have the following things:
 Zip code input which shows city, state, time, current weather forecast after click</p>
-<!--
-http://weather.yahooapis.com/forecastrss?z=99114=f
--->
+
 
 <!-- API EXAMPLE -->
 
 
 <div ng-controller="WeatherController">
-
-
 		<ul>
-         
-            {{weather.temperature_string }} {{weather.display_location.full}}
+            {{weather.temperature_string }}  {{weather.display_location.full}}
             
         </ul>
 	</div>
-   	
-        <!--okay, just did a major github push and it didn't deliver right. SO this is the properly updated code -->
-        
-        
-        
+     
  
 <!--ending container-->
 		</div>	
