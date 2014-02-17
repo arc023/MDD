@@ -17,17 +17,19 @@ Weather App project
     <!-- Bootstrap 
 <!--style sheets + js  / note: must include basic css in order for responsive css to work-->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" >
  
 </head>
+<body>
+<div id='wrap'>
 
 <!--nav bar would go HERE
 
 main body chunk-->
-<div class="container">
-<body>
-	
 
+<div class="container">
+
+
+	
 <h1>Weather app testing webpage</h1>
 <p>Note: Currently on US zip codes will work for the following code. Please don't enter international addresses.
 </p>
@@ -56,18 +58,20 @@ Zip code input which shows city, state, time, current weather forecast after cli
  
 <!--ending container-->
 		</div>	
-</body>	
+</div>
 
+<!--wrapper-->
 
 <!--bootstrap sticky footer-->
-	<footer class="navbar navbar-inner  navbar-fixed-bottom">
-		<div class="container">
-			<p> <center>Anna Carlson&copy;2014</center></p>
+
+	<nav class="navbar navbar-default  navbar-fixed-bottom">
+		<div class="container-fluid">
+			<p class = "navbar-text"> <center>Anna Carlson&copy;2014</center></p>
 			
 		</div>
-	</footer>
-	
+	</nav> 
 
-	
+
+</body>		
 <!--end code-->	
 </html>
