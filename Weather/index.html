@@ -3,7 +3,7 @@ Anna Carlson
 1402 MDD, Chris Chapman
 Weather App project
 -->
-
+<!DOCTYPE HTML>
 <html ng-app='weather1'>
 <head>
 
@@ -40,10 +40,14 @@ Zip code input which shows city, state, time, current weather forecast after cli
 
 
 <!-- API EXAMPLE -->
-
+	
 
 <div ng-controller="WeatherController">
-		<ul>
+			<form class="form-inline">
+        <input type='text' placeholder='zipcode'> <strong>or</strong> <input type='text' placeholder='city name'>
+        </form>
+        <ul>
+        
             {{weather.temperature_string }}  {{weather.display_location.full}}
             
         </ul>
@@ -56,12 +60,12 @@ Zip code input which shows city, state, time, current weather forecast after cli
 
 
 <!--bootstrap sticky footer-->
-	<div id="footer" class="navbar navbar-inner  navbar-fixed-bottom">
+	<footer class="navbar navbar-inner  navbar-fixed-bottom">
 		<div class="container">
 			<p> <center>Anna Carlson&copy;2014</center></p>
 			
 		</div>
-	</div>
+	</footer>
 	
 
 	
