@@ -9,6 +9,7 @@ Weather App project
 
 <!-- js scripts-->
 	<script src="http://code.angularjs.org/1.2.11/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
 	<script src="controllers/weather1.js"></script>
   	<script src="controllers/weather2.js"></script>
   	 
@@ -19,9 +20,11 @@ Weather App project
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
  
 </head>
-<body>
+<body >
 <div id='wrap'>
 
+<div id='logo'>
+</div>
 <!--nav bar would go HERE
 
 main body chunk-->
@@ -31,36 +34,33 @@ main body chunk-->
 
 	
 <h1>Weather app testing webpage</h1>
+<div id=content>
 <p>Note: Currently on US zip codes will work for the following code. Please don't enter international addresses.
-</p>
-<p>
-More notes: Footer in smaller sizes needs fixed. Should probably stick the orange color somewhere. 
 </p>
 
 <p>Finished page should have the following things:
 Zip code input which shows city, state, time, current weather forecast after click</p>
-
+</div>
 
 <!-- API EXAMPLE -->
-	
 
-<div ng-controller="WeatherController">
-			<form class="form-inline">
-        <input type='text' placeholder='zipcode'> <strong>or</strong> <input type='text' placeholder='city name'>
-        </form>
-        <ul>
+<div ng-view> 
+  </div>
+
+<!--<div ng-controller="WeatherController">
+
+	 <input type='text' placeholder='zipcode' ng-model='zipcode'><button type="button" class="btn btn-primary"><a href='show'>Check weather</a></button> 
         
-            {{weather.temperature_string }}  {{weather.display_location.full}}
+        
+	   
+      <font size = '75'> {{weather.temp_f}}</font>F;  {{weather.weather}} in {{weather.display_location.full}}
             
-        </ul>
 	</div>
-     
+     -->
  
 <!--ending container-->
 		</div>	
-</div>
-
-<!--wrapper-->
+</div><!--wrapper-->
 
 <!--bootstrap sticky footer-->
 

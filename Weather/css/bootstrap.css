@@ -5,11 +5,23 @@
  */
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+#logo{
+	background-image: url("../img/logo.png");
+	background-position: top left;
+	height: 320px;
+	width: 320px;
+	float: right;
+	}
+	
+	
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 	  height:100%
+
+	  
 }
 body {
   margin: 0;
@@ -274,12 +286,13 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
+
 	height:100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
- 	background: rgb(169,226,255);
+  	  	background: rgb(169,226,255);
 
 background: -moz-linear-gradient(-45deg,  rgba(169,226,255,1) 0%, rgba(169,210,243,1) 10%, rgba(144,186,228,1) 25%, rgba(144,191,240,1) 50%, rgba(107,168,229,1) 51%, rgba(162,218,245,1) 51%, rgba(37,117,190,1) 100%);
 
@@ -296,6 +309,7 @@ background: linear-gradient(135deg,  rgba(169,226,255,1) 0%,rgba(169,210,243,1) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e2ff', endColorstr='#2575be',GradientType=1 );
 
 
+ 
 }
 input,
 button,
@@ -1600,6 +1614,17 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
 }
+@media (max-width: 350px) {
+	h1{
+	display:none;	}
+	
+	#content{
+		display:none;}
+		
+	
+	}
+
+
 @media (max-width: 767px) {
   .table-responsive {
     width: 100%;
