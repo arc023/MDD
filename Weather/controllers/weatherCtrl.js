@@ -1,25 +1,8 @@
-var weather1 = angular.module('weather1', ['ngRoute']);
-  
-  /* routing configs */
+/*
+OKAY SO APPArENtLY I CAN'T PUT MY CONTROLLER INTO A DIFFERENT FILE WITHOUT BREAKING EVERTHING. SO NVM.
 
-weather1.config(['$routeProvider', function($routeProvider){
-	$routeProvider
-		.when('/show',{
-			templateUrl:'templates/showWeather.html',
-			controller: 'WeatherController'})
-		.when('/default',{
-			templateUrl:'templates/inputZip.html',
-			})
-
-		.otherwise({
-			redirectTo: '/default'
-		});
-}]);
-  
-  /* cntrls */
-  
 weather1.controller('WeatherController', function($http, $scope){
-	var targetzip = $scope.zipcode;
+	var targetzip = $scope.zipcode.values;
 	var urlBase = 'http://api.wunderground.com/api/cf6c8139e5b43574/conditions/q/';
 	var call = '.json?callback=JSON_CALLBACK';
 	var request = urlBase.concat(targetzip,call);
@@ -36,8 +19,4 @@ weather1.controller('WeatherController', function($http, $scope){
 	  
  		console.log('fail');
 });
-});
-
-
-
- 
+});*/
