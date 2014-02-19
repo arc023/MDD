@@ -2,6 +2,6 @@
 
 <h2>Input Zipcode</h2>
 
-<input type='text' placeholder='zipcode' ng-model='zipcode.message'> <button type="button" class="btn btn-warning"><a href='#/show'>Check weather</a></button>
+<input type='text' placeholder='zipcode' ng-model='zipcode.message' onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]" maxlength='5' required><a href='#/show'> <button type="button" class="btn btn-warning">Check weather</button></a>
 
-{{zipcode}}
+{{zipcode.message}}
