@@ -41,6 +41,16 @@ weather1.controller('WeatherController', function($http, $scope){
 });
 });
 
+//Error Checking - works kinda
 
+function validateForm()
+{
+var x=inputZip.html["myForm"]["zipcode"].value;
+if (x==null || x=="")
+  {
+  alert("You must enter a zipcode");
+  return false;
+  }
+};
 
  

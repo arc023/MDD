@@ -1,7 +1,9 @@
 <!-- input zipcode view, from people put in a zipcode and click a button which takes you to the weather view-->
 
 <h2>Input Zipcode</h2>
+<form action="weather1.js" method="post" name='myForm' onsubmit="return validateForm()">
+<input type='text' placeholder='zipcode' name='zipcode' ng-model='zipcode' onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]" maxlength='5' required><a href='#/show'> <button type="button" class="btn btn-warning">Check weather</button></a></form>
 
-<input type='text' placeholder='zipcode' ng-model='zipcode.message' onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]" maxlength='5' required><a href='#/show'> <button type="button" class="btn btn-warning">Check weather</button></a>
+<!-- for error validations change button to input type submit-->
 
 {{zipcode.message}}
