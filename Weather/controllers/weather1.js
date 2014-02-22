@@ -10,6 +10,9 @@ weather1.config(['$routeProvider', function($routeProvider){
 		.when('/default',{
 			templateUrl:'templates/inputZip.html',
 			})
+		.when('/about',{
+			templateUrl:'templates/about.html',
+			})
 
 		.otherwise({
 			redirectTo: '/default'
