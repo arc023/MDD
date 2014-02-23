@@ -9,7 +9,7 @@ weather1.config(['$routeProvider', function($routeProvider){
 			controller: 'WeatherController'})
 		.when('/default',{
 			templateUrl:'templates/inputZip.html',
-			})
+			controller: 'WeatherController'})
 		.when('/about',{
 			templateUrl:'templates/about.html',
 			})
@@ -21,28 +21,41 @@ weather1.config(['$routeProvider', function($routeProvider){
   
   /* cntrls */
   
-weather1.controller('WeatherController', function($http, $scope){
-	var targetzip = $scope.zipcode;
-	var urlBase = 'http://api.wunderground.com/api/cf6c8139e5b43574/conditions/q/';
+weather1.controller('WeatherController', function($http, $scope, $location){
+	$scope.list = [];
+	$scope.zipcode = '';
+	
+	$scope.submit = function(){
+		var urlBase = 'http://api.wunderground.com/api/cf6c8139e5b43574/conditions/q/';
 	var call = '.json?callback=JSON_CALLBACK';
-	var request = urlBase.concat(targetzip,call);
-	
-	
-	console.log(targetzip);
-	
-	
-	$http.jsonp('http://api.wunderground.com/api/cf6c8139e5b43574/conditions/q/99114.json?callback=JSON_CALLBACK').success(function(data) {
-		$scope.weather = data.current_observation;
+	var request = urlBase.concat($scope.zipcode,call);
 		
+//		console.log($scope.zipcode);
+		if($scope.zipcode){
+			$scope.list.push(this.zipcode);
+			$scope.zipcode='';
+			$location.path('/show');
+			}
+//		console.log(request);
+			$http.jsonp(request).success(function(data) {
+		$scope.weather = data.current_observation;
+	console.log($scope.weather);
 		
   }).error(function(data) {
 	  
  		console.log('fail');
 });
+		
+	};
+	
+
+
+	
+	
 });
 
 //Error Checking - works kinda
-
+/*
 function validateForm()
 {
 var x=inputZip.html["myForm"]["zipcode"].value;
@@ -53,4 +66,4 @@ if (x==null || x=="")
   }
 };
 
- 
+ */
