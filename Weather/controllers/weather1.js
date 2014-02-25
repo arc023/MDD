@@ -13,9 +13,12 @@ weather1.config(['$routeProvider', function($routeProvider){
 			.when('/show',{
 			templateUrl:'templates/showWeather.html',
 			controller: 'WeatherController'})
-	.when('/pictures',{
+		.when('/pictures',{
 			templateUrl:'templates/inputZip.html',
 			controller:'CarouselCtrl'})
+		.when('/msg',{
+			templateUrl:'templates/msg.html',
+			controller: 'alert'})
 		.otherwise({
 			redirectTo: '/default'
 		});
@@ -49,6 +52,14 @@ weather1.controller('CarouselCtrl', function ($scope) {
         ];
 		 var slides = $scope.slides;
 	
-   
- });
+   }); 
+
+
+weather1.controller('alert', function ($scope) {
+  $scope.model = {};
+  $scope.submit = function(){
+    alert('Message received! (Except not because the email plugin isn"t connected.)' );
+	};
+
+  });
 
