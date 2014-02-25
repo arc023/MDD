@@ -39,6 +39,7 @@ weather1.controller('WeatherController', function($http, $scope ){
 });
 });
 
+//picture controller
 weather1.controller('CarouselCtrl', function ($scope) {
 	  $scope.myInterval = 5000;
 	$scope.slides = [
@@ -54,7 +55,7 @@ weather1.controller('CarouselCtrl', function ($scope) {
 	
    }); 
 
-
+//msg controller
 weather1.controller('alert', function ($scope) {
   $scope.model = {};
   $scope.submit = function(){
