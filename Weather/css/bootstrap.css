@@ -6,13 +6,15 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
+
+
 #logo{
-	background-image: url("../img/logo_sm.png");
+	background-image: url("../img/logo2.png");
 	background-repeat: no-repeat;
 	background-position: top left;
-	height: 170px;
-	width: 220px;
-	float: right;
+	height: 320px;
+	width: 440px;
+	float: left;
 	}
 	
 	
@@ -21,7 +23,7 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 	  height:100%;
-@	  
+	  
 }
 
 article,

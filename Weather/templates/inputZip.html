@@ -1,15 +1,16 @@
-<!-- input zipcode view, from people put in a zipcode and click a button which takes you to the weather view-->
-
-<h2>Input Zipcode</h2>
-<form ng-submit="submit()">
-<input type='text' name='zipcode' ng-model='zipcode' required> <input type='submit' id='submit' value='Check weather' /></form>
-
-
-<!-- for error validations change button to input type submit
-http://www.wunderground.com/
-
-<a href='#/show'><button type="button" class="btn btn-warning"></button></a>
-onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]" maxlength='5' 
--->
-
-
+     <a href='#/default'> Back</a>
+     <div class="container" ng-controller="CarouselCtrl">
+                <div class="offsetspan6">
+                     <carousel interval="myInterval">
+                          <slide ng-repeat="slide in slides" active="slide.active">
+                                <img class="image-circle" ng-src="{{slide.image}}"    style="margin:auto;"/>
+                         <div class="carousel-caption">
+                             <h4>Slide {{$index}}</h4>
+                             <p>{{slide.text}}</p>
+                       </div>
+                       </slide>
+                </carousel>
+          </div>
+     </div> 
+  </div>
+   <a href='#/default'> Back</a>

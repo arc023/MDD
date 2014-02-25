@@ -11,9 +11,10 @@ Weather App project
 	<script src="http://code.angularjs.org/1.2.11/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
 	<script src="controllers/weather1.js"></script>
-  	<script src="controllers/weather2.js"></script>
-  	 
-  	<title>Weather </title>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"> </script>
+    
+      	 
+  	<title>City of Colville</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <!-- Bootstrap 
 <!--style sheets + js  / note: must include basic css in order for responsive css to work-->
@@ -33,17 +34,14 @@ main body chunk-->
 
 
 	
-<h1>W(eather)</h1>
+<h1>Welcome to Colville!</h1>
 <div id=content>
-<p>Insert a united states zipcode to get the current weather!</p>
-
-
-</div><p>Results currently only show weather from colville - working on fixing that now.</p>
 
 <!-- API EXAMPLE -->
 
 <div ng-view> 
   </div>
+
 
  
 <!--ending container-->
@@ -52,6 +50,7 @@ main body chunk-->
 
 <!--bootstrap sticky footer-->
 <footer>
+
 	<nav class="navbar navbar-default  navbar-fixed-bottom">
 		<div class="container-fluid">
 			<p class = "navbar-text"> <center>Anna Carlson&copy;2014 - <a href='#/about'>About Page</a><p>
