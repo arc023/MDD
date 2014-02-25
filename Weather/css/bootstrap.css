@@ -6,6 +6,11 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 
+.button{
+	display:block;
+	text-align:center;
+	}
+
 label {
     display:block;
     margin-top:20px;
