@@ -20,3 +20,8 @@ This project does not require a login - all that is needed is to insert a valid 
 
 API: http://www.wunderground.com/
 Created using Dreamweaver and textwrangler.
+
+- 
+feb 26 update
+
+This is a Colville fansite - it has some pictures, the weather, a way to email me, and a link to the main website. Please enjoy. 
